@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>BMI Calculator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel = "stylesheet" href = "css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" 
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <div class="header" align="center"><h2>Kalkulator BMI</h2></div>      
+    </div>
+
+    <div class="penjelasan">
+        <p>Berat badan ideal adalah impian semua orang. Tidak hanya memiliki bentuk
+            tubuh yang menunjang penampilan, berat badan ideal juga menandakan kondisi tubuh yang sehat. 
+        </p> 
+    </div>
+
+    <div class="penjelasan"><h3>Keunggulan Fitur</h3>
+        <p>1.Menghitung berat badan<p>
+        <p>2.Menentukan kategori berat badan ideal atau tidak</p>
+        <p>3.Mempersiapkan program penurunan berat badan</p>
+    </div>
+
+    <div class="penjelasan"><p>Kalkulator ini hanya boleh digunakan oleh orang dewasa (wanita hamil atau menyusui tidak boleh mengandalkan pembacaan BMI ini)
+        dan tidak ada tindakan yang harus diambil berdasarkan nilainya selain berkonsultasi dengan orang yang memenuhi syarat seperti dokter.
+    </p>
+    </div>
+
+    <div class="penjelasan"><p>Kalkulator akan memberi Anda gambaran tentang perbandingan berat badan Anda dengan nilai umum. Indeks Massa Tubuh (atau BMI) dihitung
+        sebagai berat badan Anda (dalam kilogram) dibagi dengan kuadrat tinggi badan Anda (dalam meter) atau BMI = Kg/M<sup>2</sup>. Bagaimana denganmu? Yuk, hitung sekarang di kalkulator BMI.
+    </p>
+    </div>
+
+    <div class = "container">
+      <div class = "main-wrapper">
+        <div class = "bmi-heads">
+        </div>
+
+        <div class="bmi-contents">
+
+          <!-- bmi metric units -->
+          <div class = "bmi-content" id = "bmi-si">
+            <form>
+
+              <div class = "form-group col-3">
+                <div>
+                <H2 align="center" class="">Kalkulator BMI</H2>
+                <br>
+                <strong>Jenis Kelamin <strong>
+                  <input type = "radio" name = "jenis-kelamin" id = "pria" value = "Pria" checked>
+                  <label for = "pria">Pria</label>
+                
+                  <input type = "radio" name = "jenis-kelamin" id = "wanita" value = "Wanita">
+                  <label for = "wanita">Wanita</label>
+                </div>
+              </div>
+
+              <div class = "form-group">
+                <label>Berat Badan</label>
+                <div class="icon-input">
+                <i class="fa-solid fa-pencil"></i>
+                <input type = "text" class = "form-control" id = "kg" placeholder="kg">
+              </div>
+              </div>
+
+              <div class = "form-group">
+                <label>Usia</label>
+                <div class="icon-input">
+                    <i class="fa-solid fa-pencil"></i>
+                <input type = "text" class = "form-control" placeholder="tahun" id = "usia">
+              </div>
+              </div>
+
+              <div class = "form-group">
+                <label>Tinggi Badan</label>
+                <div class="icon-input">
+                <i class="fa-solid fa-pencil"></i>
+                <input type = "text" class = "form-control" id = "cm" placeholder="cm">
+              </div>
+              </div>
+
+            </form>
+          </div>
+        </div>
+
+        <div class = "btns">
+          <button type = "button" id = "hitung-btn" class = "btn">Hitung BMI</button>
+          <button type = "button" id = "reset-btn" class = "btn">Reset</button>
+        </div>
+
+        <div class = "output">
+          <H2 align="center">HASIL</H2>
+          <span class = "alert-error">Isi dengan Angka!</span>
+          <div class = "bmi-output">
+            <h3 id = "bmi-value"></h3>
+            <p id = "bmi-category"></p>
+            <p id = "bmi-jenis-kelamin"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <br>
+    <div class="footer" align="center">&copy Copyright Opique</div>
+
+    
+    
+
+
+    <script src = "js/index.js"></script>
+  </body>
+</html>
